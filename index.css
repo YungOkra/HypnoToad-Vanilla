@@ -8,14 +8,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'spooky';
 }
 
 #shadow{
+    color: white;
     cursor: pointer;
     height: 100%;
     width: 100%;
     position: absolute;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 1);
     z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:8vw;
+    color: red;
 }
 
+@font-face {
+    font-family: 'spooky';
+    src: url('spooky.ttf') format('truetype');
+  }
