@@ -16,7 +16,10 @@
             
             let y = document.getElementById("toad");
             y.style.margin = "1px";
+
+            document.body.style.backgroundImage="url('hypno.png')";
             
+
             var loop = new SeamlessLoop();
             loop.addUri("hypnotoad.wav", 8057, "toad");
             loop.callback(soundsLoaded);
