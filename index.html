@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-	<object style="margin: 1px;" data="hypnotoad.svg" type="image/svg+xml"></object>
+	<object id="toad" data="hypnotoad.svg" type="image/svg+xml"></object>
     <div id="shadow" onclick="start()">Click to be Hypnotized</div>
     <script src="SeamlessLoop.js"></script>
 	<script>
@@ -14,7 +14,9 @@
             let x = document.getElementById("shadow");
             x.style.display = "none";
             
-
+            let y = document.getElementById("toad");
+            y.style.margin = "1px";
+            
             var loop = new SeamlessLoop();
             loop.addUri("hypnotoad.wav", 8057, "toad");
             loop.callback(soundsLoaded);

@@ -12,6 +12,8 @@ body{
 }
 
 #shadow{
+    padding: 0;
+    height: 0;
     color: white;
     cursor: pointer;
     height: 100%;
